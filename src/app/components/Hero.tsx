@@ -1,6 +1,5 @@
 // components/HeroSection.tsx
 'use client'
-// components/HeroSection.tsx
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
@@ -14,7 +13,7 @@ const HeroSection: React.FC = () => {
       y: 0,
       transition: { duration: 0.5 },
     });
-  }, []);
+  }, [controls]);
 
   return (
     <motion.section
@@ -31,7 +30,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          Hi, I'm Akhil Francis!
+          {"Hi, I'm Akhil Francis!"}
         </motion.h1>
         <motion.p
           className="text-lg lg:text-2xl text-white" // Updated text color to white
@@ -39,7 +38,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          I'm a Software Engineer With A Product Mindset💡<br/>Building Awesome Products with ❤️
+          {"I'm a Software Engineer With A Product Mindset💡"}<br/>{"Building Awesome Products with ❤️"}
         </motion.p>
       </div>
 
